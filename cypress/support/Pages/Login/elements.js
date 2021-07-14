@@ -4,5 +4,6 @@ export const ELEMENTS = {
     password: '#demo_password_label ~ .form-control',
     typePassword: '#txt-password',
     buttonLogin: '#btn-login',
-    loginSuccess: 'h2'
+    loginSuccess: 'h2',
+    loginFail: '[class=\'lead text-danger\']'
 }
