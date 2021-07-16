@@ -23,3 +23,15 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import Home from "../support/Pages/Home"
+import Login from "../support/Pages/Login"
+
+Cypress.Commands.add("login", ()=> {
+    cy.visit('/');
+    Home.MarcarConsulta();
+    Login.inserirUsuarioCorreto();
+    Login.inserirSenhaCorreta();
+    Login.clicarLogin();
+    let titulo = 'Make Appointment'
+    Login.verificarLoginSucesso(titulo);
+}) 
