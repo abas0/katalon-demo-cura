@@ -1,5 +1,6 @@
 {
     "baseUrl" : "https://katalon-demo-cura.herokuapp.com/",
     "viewerportHeight" : "960",
-    "viwerportWidth" : "1600"
+    "viwerportWidth" : "1600",
+    "testFiles": "**/*.feature"
 }

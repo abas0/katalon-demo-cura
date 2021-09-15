@@ -4,8 +4,9 @@ class Login{
     inserirUsuarioCorreto(){
         cy.get(elements.user).invoke('attr', 'value').then(($value) => {
             cy.get(elements.typeUser).type($value)
+            var value = $value
           });
-        //cy.type($value)
+        console.log(value)
     }
     inserirSenhaCorreta(){
        cy.get(elements.password).invoke('attr', 'value').then(($value) => {  
